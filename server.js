@@ -13,7 +13,7 @@ require('dotenv').config();
 var db = require("./models");
 console.log(db);
 
-var PORT = 3000;
+var PORT = 3000 || process.env.PORT;
 
 //Initialize Express
 var app = express();
